@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Vocabulary</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Objective!</string>
+    <string name="slide_1_desc">Learn vocabulary, Enrich thyself.</string>
+
+    <string name="slide_2_title">Discover Word!</string>
+    <string name="slide_2_desc">Discover word first to LEARN.</string>
+
+    <string name="slide_3_title">Learn Word!</string>
+    <string name="slide_3_desc">Learn discovered word and complete all by a quiz.</string>
+
+    <string name="slide_4_title">Master on a word!</string>
+    <string name="slide_4_desc">--------</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+</resources>

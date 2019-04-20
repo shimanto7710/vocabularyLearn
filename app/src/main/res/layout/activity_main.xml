@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Activity.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:titleTextColor="#ffffff"
+            app:title=" "
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:text="Home"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_gravity="center" />
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/discover_card"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="5dp"
+            android:elevation="5dp"
+            app:cardBackgroundColor="#ffffff"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Discover New Word"
+                        android:textColor="#000000"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/session_text_discover_main_activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Session"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:background="#e1e1e1"
+                    android:padding="4dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:text="Study"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/learn_card"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="5dp"
+            android:elevation="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardBackgroundColor="#ffffff"
+            android:clickable="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Learn Discovered Word"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/session_text_learn_main_activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="session"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/need_to_finish_text_learn_main_activity"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Need to finish"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="18sp" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:background="#e1e1e1"
+                    android:padding="4dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:text="Study"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/mastered_card"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="5dp"
+            android:elevation="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="50dp"
+            app:cardBackgroundColor="#ffffff"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Mastered"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+
+                    <TextView
+                        android:id="@+id/no_of_word_text_mastered_main_activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No Of Word Complete"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:background="#e1e1e1"
+                    android:padding="4dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:text="Study"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/footer"-->
+            <!--style="@android:style/ButtonBar"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:background="#ffffff"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:background="#ffffff"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:text="Profile"-->
+                <!--android:textSize="22sp"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="5dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
